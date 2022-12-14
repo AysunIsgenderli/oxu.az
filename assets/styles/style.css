@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+header .nav-top {
+  width: 100%;
+  background-color: #00193c;
+  background-image: url(../img/bg-img.webp);
+  height: 60px;
+  position: fixed;
+  z-index: 4;
+}
+header .nav-top .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .nav-top .desktop a {
+  color: #fff;
+}
+header .nav-top .desktop .logo a {
+  font-size: 40px;
+  position: relative;
+  text-decoration: none;
+}
+header .nav-top .desktop .logo a::after {
+  content: "";
+  background-image: url(../img/logo.webp);
+  position: absolute;
+  top: 9px;
+  right: -43px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .nav-top .desktop nav ul {
+  display: flex;
+  align-items: center;
+}
+header .nav-top .desktop nav ul li {
+  margin-right: 15px;
+}
+header .nav-top .desktop nav ul li .hover-element:hover {
+  color: rgb(50, 202, 205);
+}
+header .nav-top .desktop nav ul li i {
+  font-size: 25px;
+}
+header .nav-top .desktop nav ul .input-group {
+  position: relative;
+}
+header .nav-top .desktop nav ul .input-group input {
+  padding: 5px;
+  border: 1px solid rgb(71, 71, 125);
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+}
+header .nav-top .desktop nav ul .input-group i {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: 18px;
+  color: #fff;
+}
+header .nav-top .mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+header .nav-top .mobile a {
+  color: #fff;
+  margin-left: 20px;
+}
+header .nav-top .mobile .left-side {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .nav-top .mobile .left-side .mobile-icon {
+  position: absolute;
+  left: -10px;
+  top: 13px;
+  font-size: 20px;
+}
+header .nav-top .mobile .left-side .logo {
+  font-size: 35px;
+}
+header .nav-top .mobile .left-side .logo a {
+  text-decoration: none;
+}
+header .nav-top .mobile .left-side .logo a::after {
+  content: "";
+  background-image: url(../img/logo.webp);
+  position: absolute;
+  top: 5px;
+  right: -42px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .nav-top .mobile .right-side {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  header .nav-top .desktop {
+    display: none;
+  }
+  header .nav-top .container {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 1296px) {
+  header .nav-top .container {
+    max-width: 85%;
+  }
+}
+@media (min-width: 769px) {
+  header .nav-top .mobile {
+    display: none;
+  }
+}
+header .nav-bottom {
+  background-color: #222;
+  color: #fff;
+  height: 50px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  margin-top: 57px;
+}
+header .nav-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+header .nav-bottom .links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+header .nav-bottom .links-container nav {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .nav-bottom .links-container nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  height: 100%;
+  margin-right: 5px;
+}
+header .nav-bottom .links-container nav .active {
+  background-color: #454545;
+}
+header .nav-bottom .links-container nav a:hover {
+  background-color: #454545;
+}
+header .nav-bottom .links-container div {
+  margin-right: 11px;
+}
+header .nav-bottom .links-container div i {
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  header .nav-bottom {
+    display: none;
+  }
+}
+
+main .container {
+  max-width: 85%;
+}
+main .header-card {
+  margin: 0 auto;
+  position: relative;
+  height: 400px;
+  max-width: 620px;
+}
+main .header-card img {
+  width: 100%;
+  height: 330px;
+}
+main .header-card .content {
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-size: 20px;
+  z-index: 1;
+  bottom: 70px;
+  width: 100%;
+}
+main .header-card .content .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(24, 148, 160, 0.8);
+  width: 60%;
+  padding: 8px 10px;
+}
+main .header-card .content .img-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
+main .header-card .content .img-content a {
+  color: #fff;
+  text-decoration: none;
+}
+main .header-card .arrows {
+  color: #fff;
+  font-size: 60px;
+  display: none;
+}
+main .header-card .arrows .left-arrow {
+  position: absolute;
+  bottom: 200px;
+  left: 10px;
+}
+main .header-card .arrows .right-arrow {
+  position: absolute;
+  bottom: 200px;
+  right: 10px;
+}
+@media only screen and (min-width: 600px) {
+  main .header-card .arrows {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main .header-container {
+    padding: 0 200px;
+  }
+  main .header-card {
+    max-width: 620px;
+  }
+}
+main .cards .card-first {
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 9px 1px #b9b9b9;
+}
+main .cards .card-first a {
+  text-decoration: none;
+  color: #13317f;
+}
+main .cards .card-first a img {
+  max-width: 100%;
+  background-size: cover;
+}
+main .cards .card-first a p {
+  font-size: 23px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+main .cards .card-first a .dates {
+  width: 70px;
+  height: 80px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .cards .card-first a .dates .date-month {
+  background-color: #1894a0;
+  padding: 5px 8px;
+}
+main .cards .card-first a .dates .date-hours {
+  background-color: #334564;
+  padding: 3px 8px;
+}
+main .cards .card-first .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid rgb(170, 161, 161);
+  height: 35px;
+  color: #aaa;
+  background-color: rgb(241, 241, 241);
+}
+main .cards .card-first .card-footer i {
+  margin-right: 8px;
+}
+main .cards .card-first .card-footer .like {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  border-right: 1px solid rgb(204, 196, 196);
+}
+main .cards .card-first .card-footer .dislike {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  border-right: 1px solid rgb(204, 196, 196);
+}
+main .cards .card-first .card-footer .views {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+}
+@media only screen and (min-width: 720px) {
+  main .cards .card-first {
+    width: 47%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .cards .card-first {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 720px) {
+  main .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (in-width: 992px) {
+  main .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    padding-top: 107px;
+  }
+}
+footer {
+  margin-top: 50px;
+  color: #aaa;
+}
+footer .social {
+  text-align: center;
+  line-height: 25px;
+}
+footer .social a {
+  color: #aaa;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 15px;
+}
+footer .footer-bottom {
+  padding-bottom: 15px;
+  line-height: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+footer .footer-bottom a {
+  color: #aaa;
+}
+@media only screen and (min-width: 992px) {
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  footer .container .social {
+    width: 50%;
+    order: 2;
+  }
+  footer .container .social a {
+    margin-right: 5px;
+  }
+  footer .container .footer-bottom {
+    width: 50%;
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
